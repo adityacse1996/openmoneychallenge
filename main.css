@@ -63,7 +63,7 @@ float: left;
 background-color: #FCFCFF;
 }
 .row{
-  background-image: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:32fd9b77-5ce0-49f6-93b9-c8ea63be5e08;version=0?component_id=68f06d94-8bff-47ff-90ab-c6334487c29b&api_key=CometServer1&access_token=1609876628_urn%3Aaaid%3Asc%3AUS%3A32fd9b77-5ce0-49f6-93b9-c8ea63be5e08%3Bpublic_38bdd90b163f174aec25fc45bd25d512e32d1c2b');
+  background-image: url('./images/sol_wave_bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -94,17 +94,58 @@ height: 365px;
   background-color: transparent;
   border: 5px solid #663399;
   border-radius: 40px;
+  color:#663399;
   padding: 20px;
   align-content: center;
 }
-@media only screen and (max-width: 768px){
-ul{
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.hamburger{
   display: none;
+}
+@media only screen and (max-width: 768px){
+.logo{
+  top: 0px;
+  left: 0px;
+}
+.col-sm-6{
+  width: 100%;
+}
+.nav-item{
+  margin: 10px;
+  padding-top: 10px;
+}
+.col-sm-6{
+  width: 100%;
+}
+.col-sm-5{
+  display: block;
+  left: 100px;
 }
 }
 @media only screen and (max-width: 425px) {
 ul{
   display: none;
+}
+.hamburger{
+  display: block;
+  left: 60%;
 }
 .collect-img{
   border-radius: 10px;
@@ -119,5 +160,18 @@ width: 50px;
   height: 50px;
   top: 27px;
 left: 50px;  
+}
+.sec2{
+  display: none;
+}
+.col-sm-6{
+  width: 100%;
+}
+.col-sm-5{
+  display: block;
+  left: 100px;
+}
+.mybtn{
+  width: 120%;
 }
 }
